@@ -1,0 +1,189 @@
+
+/*     GENERAL     */
+* {
+    /* box-sizing: border-box; */
+    /* font-family: 'Courgette', cursive; */
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*     TEXT     */
+h6 {
+    font-family: 'Courgette', cursive;
+    font-weight: 100;
+}
+
+
+/*     HEADER      */
+header {
+    padding: 1rem;
+    }
+
+header ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}
+
+header ul li {
+    color: darkblue;
+    background-color: #92cce1;
+    list-style: none;
+    text-decoration-style: none;
+    margin: 1rem;
+    padding: 1rem;
+}
+.no {
+    background-color: unset;
+    font-size: 34px;
+}
+
+
+/*     GO BACK BUTTON     */
+#goback {
+    color: #00008b;
+    padding: 2rem;
+    list-style: none;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+
+
+/*     LINKS     */
+a:visited {
+    color: darkblue;
+    text-decoration-style: none;
+}
+a:hover {
+  background-color: #ffffc3;  
+}
+
+/*    MAIN     */
+/*     HOME     */
+main {
+    font-family: 'Open Sans', sans-serif;
+    margin: .5%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    background-color: azure;
+}
+main p {
+    padding: 2rem 0;
+}
+main h4 {
+    background-color: #92cce1;
+    padding:.5rem;
+}
+article {
+    flex: 2;
+    overflow-y: auto
+}
+aside {
+    flex: 1;
+    overflow-y: auto
+}
+
+
+/*     PAGES INSIDE ARTICLE      */
+/*     PRODUCTS      */
+#products {
+    background-color: #92cce1;
+    margin: .5% 0;
+    padding: 2rem;
+}
+.productphoto {
+    display: flex;
+    justify-content: space-between;
+}
+.productphoto a { 
+    padding: 1rem;
+    width: 250px;
+    height: auto;
+    color: darkblue;
+    text-decoration: none;
+}
+.productphoto a {
+    margin: 1rem;
+}
+.productphoto a:hover {
+    background-color: lemonchiffon;  
+  }
+
+  /*      ASIDE      */
+aside {
+    padding: 2rem;
+    background-color: #ffc55c;
+    margin: 2rem;
+}
+
+/*     ABOUTME     */
+#aboutme {
+    text-align: center;
+    margin: .5% 0;
+}
+#aboutme .description {
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 200%;
+}
+#aboutme .description img {
+    border: 0.01em black solid;
+    padding: 1rem;
+}
+#aboutme p {
+    font-weight: lighter;
+    line-height: 36px;
+}
+
+/*     FOOTER    */
+footer {
+    text-align: center;
+    background-color: #92cce1;
+}
+
+/*      -------------------------------- */
+/*     TWEETS PAGE     */
+#tweetspage {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:1024px) {
+    header {
+        height: auto;
+    }
+    main{
+        height: auto;
+    }
+    #aboutme .description {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    .product {
+        height: auto;
+    }
+    .productphoto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .productphoto img {
+        max-height: 50%;
+        width: auto;
+        margin: .5rem;
+        }
+    footer {
+        height: auto;
+    }
+#goback {
+    height: aut0;
+}
+  }
